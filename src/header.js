@@ -6,6 +6,8 @@ export function headerContent() {
     const headerNavMenu = document.createElement("li");
     const headerNavContact = document.createElement("li");
 
+    header.classList.add("header");
+
     headerTitle.textContent = "Cup Cakes";
     headerNavHome.textContent = "Home";
     headerNavMenu.textContent = "Menu"
