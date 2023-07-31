@@ -43,7 +43,7 @@ body {
     overflow: auto;
     grid-row: 2;
     display: grid;
-    place-items: center;
+    justify-items: center;
 }
 
 .home-container {
@@ -96,6 +96,18 @@ body {
             height: 200px;
             object-fit: cover;
         }
+    }
+}
+
+.contact-container {
+    text-align: center;
+
+    & h1 {
+        margin-bottom: 40px;
+    }
+
+    & :not(:first-child, :last-child) {
+        margin-bottom: 20px;
     }
 }
 

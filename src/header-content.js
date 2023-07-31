@@ -8,7 +8,7 @@ export function headerContent() {
 
     headerContainer.classList.add("header-container");
 
-    headerTitle.textContent = "Cup Cakes";
+    headerTitle.textContent = "The Cup Cakes";
     headerNavHome.textContent = "Home";
     headerNavMenu.textContent = "Menu"
     headerNavContact.textContent = "Contact";

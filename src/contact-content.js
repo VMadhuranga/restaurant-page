@@ -5,6 +5,8 @@ export function contactContent() {
     const email = document.createElement("p");
     const address = document.createElement("p");
 
+    contactContainer.classList.add("contact-container");
+
     contactTitle.textContent = "Contact Us";
     telePhone.textContent = "Phone: +94 (123) 123-1234";
     email.textContent = "Email: fakecupcakes@example.com";
