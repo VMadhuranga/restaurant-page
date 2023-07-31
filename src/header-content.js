@@ -1,12 +1,12 @@
 export function headerContent() {
-    const header = document.createElement("div");
+    const headerContainer = document.createElement("div");
     const headerTitle = document.createElement("h1");
     const headerNav = document.createElement("ul");
     const headerNavHome = document.createElement("li");
     const headerNavMenu = document.createElement("li");
     const headerNavContact = document.createElement("li");
 
-    header.classList.add("header");
+    headerContainer.classList.add("header-container");
 
     headerTitle.textContent = "Cup Cakes";
     headerNavHome.textContent = "Home";
@@ -21,8 +21,8 @@ export function headerContent() {
     headerNav.appendChild(headerNavMenu);
     headerNav.appendChild(headerNavContact);
 
-    header.appendChild(headerTitle);
-    header.appendChild(headerNav);
+    headerContainer.appendChild(headerTitle);
+    headerContainer.appendChild(headerNav);
 
-    return {header, headerNavHome, headerNavMenu, headerNavContact};
+    return headerContainer;
 }

@@ -14,7 +14,7 @@ body {
     grid-template-rows: 12% 1fr 7%;
 }
 
-.header {
+.header-container {
     background-color: white;
     box-shadow: 0 5px 5px lightgray;
     grid-row: 1;
@@ -37,14 +37,14 @@ body {
     }
 }
 
-.main {
+.main-container {
     overflow: auto;
     grid-row: 2;
     display: grid;
     place-items: center;
 }
 
-.home {
+.home-container {
     width: 30%;
     text-align: center;
 
@@ -74,7 +74,7 @@ body {
     }
 }
 
-.footer {
+.footer-container {
     font-size: 1.2rem;
     background-color: white;
     box-shadow: 0 -5px 5px lightgrey; 
