@@ -7,8 +7,8 @@ import "../src/style.css";
 function pageLoad() {
     const content = document.querySelector("#content");
 
-    content.appendChild(headerContent());
-    content.appendChild(mainContent(homeContent()));
+    content.appendChild(headerContent().header);
+    content.appendChild(mainContent(homeContent().home));
     content.appendChild(footerContent());
 }
 

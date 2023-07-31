@@ -13,6 +13,10 @@ export function headerContent() {
     headerNavMenu.textContent = "Menu"
     headerNavContact.textContent = "Contact";
 
+    headerNavHome.classList.add("header-nav-home");
+    headerNavMenu.classList.add("header-nav-menu");
+    headerNavContact.classList.add("header-nav-contact");
+
     headerNav.appendChild(headerNavHome);
     headerNav.appendChild(headerNavMenu);
     headerNav.appendChild(headerNavContact);
@@ -20,5 +24,5 @@ export function headerContent() {
     header.appendChild(headerTitle);
     header.appendChild(headerNav);
 
-    return header;
+    return {header, headerNavHome, headerNavMenu, headerNavContact};
 }
