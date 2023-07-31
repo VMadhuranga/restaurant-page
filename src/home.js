@@ -7,6 +7,9 @@ export function homeContent() {
     const weekDays = document.createElement("p");
     const weekEnd = document.createElement("p");
 
+    home.classList.add("home");
+    timeTable.classList.add("time-table");
+
     homeTitle.textContent = "Welcome to The Cup Cakes";
     homeDescription.textContent = "Our shop is the perfect place to \
                                     for you to grab delicious Cup Cakes.\
