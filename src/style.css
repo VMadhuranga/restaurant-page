@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:sans-serif;
     background: url("./images/cupcake-background.jpg") no-repeat;
     background-size: cover;
 }
@@ -13,14 +13,16 @@ body {
 #content {
     height: 100vh;
     display: grid;
-    grid-template-rows: 12% 1fr 7%;
+    grid-template-rows: auto 1fr auto;
 }
 
 .header-container {
     background-color: white;
-    box-shadow: 0 5px 5px lightgray;
+    padding: 10px;
     grid-row: 1;
     display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     z-index: 1;
@@ -37,20 +39,26 @@ body {
         & li {
             font-size: 1.5rem;
         }
+
+        & li:hover {
+            border-bottom: 1px solid black;
+        }
+
     }
 }
 
 .main-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
     padding: 50px;
     overflow: auto;
     grid-row: 2;
-    display: grid;
-    justify-items: center;
 }
 
 .home-container {
-    width: 30%;
     text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
 
     & > :not(:last-child) {
         margin-bottom: 20px;
@@ -78,10 +86,11 @@ body {
 }
 
 .menu-container {
+    max-width: 500px;
+    margin: 0 auto;
     display: grid;
     gap: 40px;
-    grid-template-columns: repeat(2, 1fr);
-    /* grid-auto-flow: column; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
     & .menu-item-card {
         display: grid;
@@ -92,7 +101,7 @@ body {
         }
         
         & img {
-            border: 5px double black;
+            border: 5px double white;
             border-radius: 5px;
             width: 200px;
             height: 200px;
@@ -115,8 +124,8 @@ body {
 
 .footer-container {
     font-size: 1.2rem;
-    background-color: white;
-    box-shadow: 0 -5px 5px lightgrey; 
+    background-color: white; 
+    padding: 10px;
     grid-row: 3;
     display: grid;
     place-items: center;

@@ -27,7 +27,7 @@ function switchTab() {
     });
 
     menuTab.addEventListener("click", function() {
-        mainContainer.replaceChild(menuContent(), mainContainer.lastChild,);
+        mainContainer.replaceChild(menuContent(), mainContainer.lastChild);
     });
 
     contactTab.addEventListener("click", function() {
