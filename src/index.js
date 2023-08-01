@@ -8,10 +8,31 @@ import "../src/style.css";
 
 function pageLoad() {
     const content = document.querySelector("#content");
-
+    
     content.appendChild(headerContent());
-    content.appendChild(mainContent(contactContent()));
+    content.appendChild(mainContent(homeContent()));
     content.appendChild(footerContent());
+
+    switchTab();
+}
+
+function switchTab() {
+    const mainContainer = document.querySelector(".main-container");
+    const homeTab = document.querySelector(".header-nav-home");
+    const menuTab = document.querySelector(".header-nav-menu");
+    const contactTab = document.querySelector(".header-nav-contact");
+
+    homeTab.addEventListener("click", function() {
+        mainContainer.replaceChild(homeContent(), mainContainer.lastChild);
+    });
+
+    menuTab.addEventListener("click", function() {
+        mainContainer.replaceChild(menuContent(), mainContainer.lastChild,);
+    });
+
+    contactTab.addEventListener("click", function() {
+        mainContainer.replaceChild(contactContent(), mainContainer.lastChild);
+    });
 }
 
 pageLoad();
