@@ -6,6 +6,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: url("./images/cupcake-background.jpg") no-repeat;
+    background-size: cover;
 }
 
 #content {

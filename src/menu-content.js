@@ -1,7 +1,7 @@
-import vanillaCupcake from "./menu-item-images/vanilla-cupcake.jpg";
-import chocolateCupcake from "./menu-item-images/chocolate-cupcake.jpg";
-import redVelvetCupcake from "./menu-item-images/red-velvet-cupcake.jpg";
-import blueBerryCupcake from "./menu-item-images/blue-berry-cupcake.jpg";
+import vanillaCupcake from "./images/vanilla-cupcake.jpg";
+import chocolateCupcake from "./images/chocolate-cupcake.jpg";
+import redVelvetCupcake from "./images/red-velvet-cupcake.jpg";
+import blueBerryCupcake from "./images/blue-berry-cupcake.jpg";
 
 export function menuContent() {
     const menuContainer = document.createElement("div");
